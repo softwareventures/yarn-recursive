@@ -1,5 +1,5 @@
 {
-  "name": "yarn-recursive",
+  "name": "@softwareventures/yarn-recursive",
   "version": "1.0.7",
   "description": "Recursively run `yarn` in the current folder",
   "main": "yarn-recursive.js",

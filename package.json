@@ -14,7 +14,7 @@
   "homepage": "https://github.com/softwareventures/yarn-recursive",
   "bugs": "https://github.com/softwareventures/yarn-recursive/issues",
   "main": "yarn-recursive.js",
-  "repository": "github:/yarn-recursive.git",
+  "repository": "github:softwareventures/yarn-recursive",
   "license": "MIT",
   "scripts": {
     "prepare": "tsc",

@@ -23,7 +23,7 @@ function packageJsonLocations(dirname, includeHidden) {
     if (stat.isFile() && filename === "package.json") {
       result.push(dirname);
     } else if (stat.isDirectory()) {
-      result = result.concat(packageJsonLocations(pathname));
+      result = result.concat(packageJsonLocations(pathname, includeHidden));
     }
   }
 

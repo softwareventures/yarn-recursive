@@ -11,22 +11,17 @@
   "contributors": [
     "Daniel Cassidy <mail@danielcassidy.me.uk>"
   ],
+  "homepage": "https://github.com/softwareventures/yarn-recursive",
+  "bugs": "https://github.com/softwareventures/yarn-recursive/issues",
   "main": "yarn-recursive.js",
+  "repository": "github:/yarn-recursive.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nrigaudiere/yarn-recursive.git"
   },
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
   },
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nrigaudiere/yarn-recursive/issues"
-  },
-  "homepage": "https://github.com/nrigaudiere/yarn-recursive#readme",
   "dependencies": {
     "cli-color": "^1.2.0",
     "shelljs": "^0.7.8",

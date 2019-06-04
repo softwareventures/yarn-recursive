@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 cache: yarn
-#deploy:
-#  provider: script
-#  skip_cleanup: true
-#  script: yarn semantic-release
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: yarn semantic-release

@@ -2,6 +2,11 @@
   "name": "@softwareventures/yarn-recursive",
   "version": "1.0.7",
   "description": "Recursively run yarn in a folder. Fork of original with bug fixes, and performance and sanity patches.",
+  "keywords": [
+    "yarn",
+    "recursive",
+    "build"
+  ],
   "main": "yarn-recursive.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +18,6 @@
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
   },
-  "keywords": [
-    "yarn",
-    "recursive",
-    "install"
-  ],
   "author": "Nicolas Rigaudière",
   "license": "ISC",
   "bugs": {

@@ -7,6 +7,10 @@
     "recursive",
     "build"
   ],
+  "author": "Nicolas Rigaudière",
+  "contributors": [
+    "Daniel Cassidy <mail@danielcassidy.me.uk>"
+  ],
   "main": "yarn-recursive.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +22,6 @@
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
   },
-  "author": "Nicolas Rigaudière",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nrigaudiere/yarn-recursive/issues"

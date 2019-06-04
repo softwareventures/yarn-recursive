@@ -1,5 +1,6 @@
 {
   "extends": [
     "@softwareventures:js-app"
-  ]
+  ],
+  "includeForks": true
 }

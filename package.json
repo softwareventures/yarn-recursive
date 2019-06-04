@@ -17,12 +17,23 @@
   "repository": "github:/yarn-recursive.git",
   "license": "MIT",
   "scripts": {
-    "test": "echo No tests yet"
+    "prepare": "tsc",
+    "test": "tslint --project ."
   },
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
   },
+  "devDependencies": {
+    "@softwareventures/tsconfig": "2.0.0",
+    "@softwareventures/tslint-rules": "0.7.0",
+    "tslint": "5.17.0",
+    "typescript": "3.5.1"
+  },
   "dependencies": {
+    "@types/cli-color": "^0.3.29",
+    "@types/node": "^12.0.4",
+    "@types/shelljs": "^0.8.5",
+    "@types/yargs": "^13.0.0",
     "cli-color": "^1.2.0",
     "shelljs": "^0.7.8",
     "yargs": "^9.0.1"

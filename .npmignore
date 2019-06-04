@@ -1,0 +1,8 @@
+/.idea
+/yarn.lock
+/tsconfig.json
+/tslint.json
+/.travis.yml
+/renovate.json
+*.ts
+!*.d.ts

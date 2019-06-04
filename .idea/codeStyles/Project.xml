@@ -1,9 +1,7 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
-    <codeStyleSettings language="JavaScript">
-      <indentOptions>
-        <option name="INDENT_SIZE" value="2" />
-      </indentOptions>
-    </codeStyleSettings>
+    <TypeScriptCodeStyleSettings version="1">
+      <option name="IMPORT_SORT_MODULE_NAME" value="true" />
+    </TypeScriptCodeStyleSettings>
   </code_scheme>
 </component>

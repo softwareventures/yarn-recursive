@@ -42,7 +42,7 @@
     "cli-color": "1.2.0",
     "shelljs": "0.7.8",
     "tslib": "1.9.3",
-    "yargs": "9.0.1"
+    "yargs": "13.2.4"
   },
   "config": {
     "commitizen": {

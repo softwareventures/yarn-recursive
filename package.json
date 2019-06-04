@@ -1,7 +1,7 @@
 {
   "name": "@softwareventures/yarn-recursive",
   "version": "1.0.7",
-  "description": "Recursively run `yarn` in the current folder",
+  "description": "Recursively run yarn in a folder. Fork of original with bug fixes, and performance and sanity patches.",
   "main": "yarn-recursive.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

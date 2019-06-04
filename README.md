@@ -4,6 +4,8 @@ _Recursively run yarn in a folder_
 
 Takes your tree and checks for package.json in every folder and runs `yarn` in every folder.
 
+This is a fork of the [original project][1], with bug fixes, and performance and sanity patches.
+
 ## Arguments
 
 You can add arguments when running the command
@@ -45,3 +47,6 @@ example:
 ```
 $ yarn-recursive --includeHidden
 ```
+
+
+  [1]: https://github.com/nrigaudiere/yarn-recursive

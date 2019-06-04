@@ -33,3 +33,15 @@ $ yarn-recursive --skipRoot --cmd test
 
 This is useful if, for example, you want to run yarn-recursive from a script in your root
 package.json, which would otherwise cause infinite recursion.
+
+### Hidden Directories
+
+By default, yarn-recursive will not search inside hidden directories (directories with names that
+start with a dot, for example `.git`).
+
+If you want to include hidden directories in the search, specify the `--includeHidden` option, for
+example:
+
+```
+$ yarn-recursive --includeHidden
+```

@@ -6,9 +6,13 @@ const shell = require('shelljs');
 const argv = require('yargs').argv;
 const clc = require('cli-color');
 
-function packageJsonLocations(dirname) {
-  const filenames = fs.readdirSync(dirname)
+function packageJsonLocations(dirname, includeHidden) {
+  let filenames = fs.readdirSync(dirname)
       .filter(filename => filename !== 'node_modules');
+
+  if (!includeHidden) {
+    filenames = filenames.filter(filename => !filename.match(/^\./));
+  }
 
   let result = [];
 
@@ -51,7 +55,7 @@ function filterRoot(directoryName) {
 }
 
 if (require.main === module) {
-  let exitCode = packageJsonLocations(process.cwd())
+  let exitCode = packageJsonLocations(process.cwd(), argv.includeHidden)
     .filter(argv.skipRoot ? filterRoot : filtered => filtered)
     .map(yarn)
     .reduce((code, result) =>result.exitCode > code ? result.exitCode : code, 0);

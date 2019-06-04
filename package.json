@@ -1,6 +1,6 @@
 {
   "name": "@softwareventures/yarn-recursive",
-  "version": "1.0.7",
+  "version": "0.0.0-development",
   "description": "Recursively run yarn in a folder. Fork of original with bug fixes, and performance and sanity patches.",
   "keywords": [
     "yarn",
@@ -18,7 +18,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "tsc",
-    "test": "tslint --project ."
+    "test": "tslint --project .",
+    "semantic-release": "semantic-release"
   },
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
@@ -28,7 +29,8 @@
     "@softwareventures/tslint-rules": "0.7.0",
     "cz-conventional-changelog": "2.1.0",
     "tslint": "5.17.0",
-    "typescript": "3.5.1"
+    "typescript": "3.5.1",
+    "semantic-release": "15.13.12"
   },
   "dependencies": {
     "@types/cli-color": "^0.3.29",

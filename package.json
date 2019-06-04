@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "cli-color": "1.2.0",
-    "shelljs": "0.7.8",
+    "shelljs": "0.8.3",
     "tslib": "1.9.3",
     "yargs": "9.0.1"
   },

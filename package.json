@@ -18,7 +18,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "tsc",
-    "test": "tslint --project .",
+    "test": "tslint --project . && ava",
     "semantic-release": "semantic-release"
   },
   "bin": {
@@ -27,10 +27,12 @@
   "devDependencies": {
     "@softwareventures/tsconfig": "2.0.0",
     "@softwareventures/tslint-rules": "0.7.0",
+    "ava": "2.0.0",
     "cz-conventional-changelog": "2.1.0",
+    "semantic-release": "15.13.12",
+    "ts-node": "8.2.0",
     "tslint": "5.17.0",
-    "typescript": "3.5.1",
-    "semantic-release": "15.13.12"
+    "typescript": "3.5.1"
   },
   "dependencies": {
     "@types/cli-color": "^0.3.29",
@@ -45,5 +47,14 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }

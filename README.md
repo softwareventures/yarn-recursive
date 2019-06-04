@@ -1,10 +1,10 @@
 # yarn-recursive
 
-##### Recursively run yarn in a folder
+_Recursively run yarn in a folder_
 
 Takes your tree and checks for package.json in every folder and runs `yarn` in every folder.
 
-### Arguments
+## Arguments
 
 You can add arguments when running the command
 
@@ -23,7 +23,7 @@ End of yarns
 $ yarn-recursive --cmd upgrade --opt <package-name>
 ```
 
-### Skip root
+## Skip root
 
 If you want to skip the root directory of your project, add the `--skipRoot` option:
 
@@ -34,7 +34,7 @@ $ yarn-recursive --skipRoot --cmd test
 This is useful if, for example, you want to run yarn-recursive from a script in your root
 package.json, which would otherwise cause infinite recursion.
 
-### Hidden Directories
+## Hidden Directories
 
 By default, yarn-recursive will not search inside hidden directories (directories with names that
 start with a dot, for example `.git`).

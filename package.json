@@ -15,13 +15,13 @@
   "bugs": "https://github.com/softwareventures/yarn-recursive/issues",
   "main": "yarn-recursive.js",
   "repository": "github:/yarn-recursive.git",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
   },
-  "license": "ISC",
   "dependencies": {
     "cli-color": "^1.2.0",
     "shelljs": "^0.7.8",

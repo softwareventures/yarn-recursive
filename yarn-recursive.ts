@@ -46,7 +46,7 @@ function yarn(directoryName: string): Result {
         command += " " + argv.opt;
     }
 
-    console.log(clc.blueBright("Current yarn path: " + directoryName + "/package.json..."));
+    console.log(clc.blueBright("Current yarn path: " + directoryName + path.sep + "package.json..."));
 
     shell.cd(directoryName);
     const result = shell.exec(command);

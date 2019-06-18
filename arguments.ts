@@ -6,10 +6,6 @@ export interface Option {
     readonly value: string | boolean;
 }
 
-export function readArguments(argv: ReadonlyArray<string>): ReadonlyArray<Argument> {
-    return argv.map(readArgument);
-}
-
 export function readArgument(arg: string): Argument {
     if (arg === "--") {
         return arg;

@@ -1,5 +1,5 @@
 import test from "ava";
-import {readArgument, readArguments} from "./arguments";
+import {readArgument} from "./arguments";
 
 test("readArgument", t => {
     t.deepEqual(readArgument("--skip-root"), {type: "option", name: "skipRoot", value: true});
@@ -13,25 +13,4 @@ test("readArgument", t => {
     t.deepEqual(readArgument("--no-cmd"), {type: "option", name: "cmd", value: false});
     t.deepEqual(readArgument("install"), "install");
     t.deepEqual(readArgument("--"), "--");
-});
-
-test("readArguments", t => {
-    t.deepEqual(readArguments(
-        [
-            "--skip-root", "--no-skip-root", "--skipRoot", "--noSkip-root", "--noSkipRoot",
-            "--cmd=install", "--no-cmd=install", "--cmd", "--no-cmd", "install", "--"
-        ]),
-        [
-            {type: "option", name: "skipRoot", value: true},
-            {type: "option", name: "skipRoot", value: false},
-            {type: "option", name: "skipRoot", value: true},
-            {type: "option", name: "skipRoot", value: false},
-            {type: "option", name: "skipRoot", value: false},
-            {type: "option", name: "cmd", value: "install"},
-            {type: "option", name: "noCmd", value: "install"},
-            {type: "option", name: "cmd", value: true},
-            {type: "option", name: "cmd", value: false},
-            "install",
-            "--"
-        ]);
 });

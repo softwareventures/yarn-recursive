@@ -27,9 +27,9 @@ export function readArguments(args: ReadonlyArray<string>): Options {
                 mode = "passthrough";
             } else if (typeof argument === "string") {
                 command.push(argument);
-            } else if (argument.name === "skipRoot") {
+            } else if (argument.name === "skip-root") {
                 skipRoot = !!argument.value;
-            } else if (argument.name === "includeHidden") {
+            } else if (argument.name === "include-hidden") {
                 includeHidden = !!argument.value;
             } else if (argument.name === "cmd") {
                 deprecatedCmdOpt = true;
@@ -70,13 +70,13 @@ export function readArgument(arg: string): Argument {
     const matches = /^--([^=]*)(?:=(.*))?$/.exec(arg);
 
     if (matches) {
-        let name = matches[1].replace(/-./g, s => s.charAt(1).toUpperCase());
+        let name = matches[1].replace(/[A-Z]/g, s => "-" + s.toLowerCase());
         let value = matches[2] == null
             ? true
             : matches[2];
 
-        if (value === true && name.match(/^no[A-Z]/)) {
-            name = name.replace(/^no[A-Z]/, s => s.charAt(2).toLowerCase());
+        if (value === true && name.match(/^no-[a-z]/)) {
+            name = name.replace(/^no-[a-z]/, s => s.charAt(3));
             value = false;
         }
 

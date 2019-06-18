@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 
+import {filterFn, foldFn, mapFn} from "@softwareventures/array";
+import chain from "@softwareventures/chain";
+import {fork} from "child_process";
 import clc = require("cli-color");
 import fs = require("fs");
+import pSeries from "p-series";
 import path = require("path");
-import shell = require("shelljs");
-import {argv} from "yargs";
+import {readArguments} from "./arguments";
 
 function packageJsonLocations(dirname: string, includeHidden: boolean): string[] {
     let filenames = fs.readdirSync(dirname)
@@ -35,26 +38,17 @@ interface Result {
     exitCode: number;
 }
 
-function yarn(directoryName: string): Result {
-    let command = "yarn";
-
-    if (argv.cmd) {
-        command += " " + argv.cmd;
-    }
-
-    if (argv.opt) {
-        command += " " + argv.opt;
-    }
-
+function yarn(yarnPath: string, directoryName: string, command: ReadonlyArray<string>): Promise<Result> {
     console.log(clc.blueBright("Current yarn path: " + directoryName + path.sep + "package.json..."));
 
-    shell.cd(directoryName);
-    const result = shell.exec(command);
-
-    return {
-        directoryName,
-        exitCode: result.code
-    };
+    return new Promise((resolve, reject) => {
+        fork(yarnPath, command, {cwd: directoryName, stdio: "inherit"})
+            .on("error", reject)
+            .on("exit", (code) => resolve({
+                directoryName,
+                exitCode: code == null ? 1 : code
+            }));
+    });
 }
 
 function filterRoot(directoryName: string): boolean {
@@ -62,11 +56,28 @@ function filterRoot(directoryName: string): boolean {
 }
 
 if (require.main === module) {
-    const exitCode = packageJsonLocations(process.cwd(), !!argv.includeHidden)
-        .filter(argv.skipRoot ? filterRoot : filtered => filtered)
-        .map(yarn)
-        .reduce((code, result) => result.exitCode > code ? result.exitCode : code, 0);
+    const options = readArguments(process.argv.slice(2));
 
-    console.log(clc.green("End of yarns"));
-    process.exit(exitCode);
+    const yarnPath = require.resolve("yarn/bin/yarn.js");
+
+    chain(packageJsonLocations(process.cwd(), options.includeHidden))
+        .map(filterFn(options.skipRoot ? filterRoot : () => true))
+        .map(mapFn(directoryName => () => yarn(yarnPath, directoryName, options.command)))
+        .map(pSeries)
+        .value
+        .then(foldFn((code, result) => result.exitCode > code ? result.exitCode : code, 0))
+        .then(exitCode => {
+            console.log(clc.green("End of yarns"));
+
+            if (options.deprecatedCmdOpt) {
+                console.warn(clc.red("Warning: The --cmd and --opt options are deprecated and will be removed in a " +
+                    "future release.\n" +
+                    "         Any arguments not recognised by yarn-recursive are now passed through to yarn as is.\n" +
+                    "         For example, instead of '--cmd install --opt --flat', you can now write just 'install " +
+                    "--flat'."));
+            }
+
+            process.exit(exitCode);
+        })
+        .catch(reason => console.error(clc.red(reason)));
 }

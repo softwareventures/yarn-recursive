@@ -14,10 +14,10 @@ export function readArguments(args: ReadonlyArray<string>): Options {
         if (mode === "passthrough") {
             command.push(arg);
         } else if (mode === "cmd") {
-            command = shell(arg).concat(command);
+            command = arg.split(" ").concat(command);
             mode = "bare";
         } else if (mode === "opt") {
-            command = command.concat(shell(arg));
+            command = command.concat(arg.split(" "));
             mode = "bare";
         } else {
             const argument = readArgument(arg);
@@ -31,13 +31,13 @@ export function readArguments(args: ReadonlyArray<string>): Options {
                 includeHidden = !!argument.value;
             } else if (argument.name === "cmd") {
                 if (typeof argument.value === "string") {
-                    command = shell(argument.value).concat(command);
+                    command = argument.value.split(" ").concat(command);
                 } else if (argument.value) {
                     mode = "cmd";
                 }
             } else if (argument.name === "opt") {
                 if (typeof argument.value === "string") {
-                    command = command.concat(shell(argument.value));
+                    command = command.concat(argument.value.split(" "));
                 } else if (argument.value) {
                     mode = "opt";
                 }
@@ -48,11 +48,6 @@ export function readArguments(args: ReadonlyArray<string>): Options {
     }
 
     return {skipRoot, includeHidden, command};
-}
-
-export function shell(arg: string): string[] {
-    // FIXME
-    return arg.split(" ");
 }
 
 export type Argument = Option | string;

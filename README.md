@@ -69,4 +69,22 @@ $ yarn-recursive --include-hidden
 ```
 
 
+## Concurrency
+
+By default, yarn-recursive will run yarn for each project sequentially.
+
+To run yarn for all projects concurrently, specify the `--concurrent` option, for example:
+
+```
+$ yarn-recursive --concurrent start
+```
+
+This is particularly useful for commands like `yarn start` which may not exit until the user stops them.
+
+This feature is not recommended for general build tasks such as `yarn install`, since output from each concurrent
+process will be interleaved in the console and likely be difficult to read.
+
+This feature is experimental and will be improved in future releases.
+
+
   [1]: https://github.com/nrigaudiere/yarn-recursive

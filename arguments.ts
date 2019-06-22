@@ -1,6 +1,7 @@
 export interface Options {
     readonly skipRoot: boolean;
     readonly includeHidden: boolean;
+    readonly concurrent: boolean;
     readonly command: ReadonlyArray<string>;
     readonly deprecatedCmdOpt: boolean;
 }
@@ -8,6 +9,7 @@ export interface Options {
 export function readArguments(args: ReadonlyArray<string>): Options {
     let skipRoot = false;
     let includeHidden = false;
+    let concurrent = false;
     let command: string[] = [];
     let deprecatedCmdOpt = false;
     let mode: "bare" | "cmd" | "opt" | "passthrough" = "bare";
@@ -31,6 +33,8 @@ export function readArguments(args: ReadonlyArray<string>): Options {
                 skipRoot = !!argument.value;
             } else if (argument.name === "include-hidden") {
                 includeHidden = !!argument.value;
+            } else if (argument.name === "concurrent") {
+                concurrent = !!argument.value;
             } else if (argument.name === "cmd") {
                 deprecatedCmdOpt = true;
                 if (typeof argument.value === "string") {
@@ -51,7 +55,7 @@ export function readArguments(args: ReadonlyArray<string>): Options {
         }
     }
 
-    return {skipRoot, includeHidden, command, deprecatedCmdOpt};
+    return {skipRoot, includeHidden, concurrent, command, deprecatedCmdOpt};
 }
 
 export type Argument = Option | string;

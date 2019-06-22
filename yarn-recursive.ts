@@ -5,6 +5,7 @@ import chain from "@softwareventures/chain";
 import {fork} from "child_process";
 import clc = require("cli-color");
 import fs = require("fs");
+import pAll from "p-all";
 import pSeries from "p-series";
 import path = require("path");
 import {readArguments} from "./arguments";
@@ -63,7 +64,7 @@ if (require.main === module) {
     chain(packageJsonLocations(process.cwd(), options.includeHidden))
         .map(filterFn(options.skipRoot ? filterRoot : () => true))
         .map(mapFn(directoryName => () => yarn(yarnPath, directoryName, options.command)))
-        .map(pSeries)
+        .map<Promise<Result[]>>(options.concurrent ? pAll : pSeries)
         .value
         .then(foldFn((code, result) => result.exitCode > code ? result.exitCode : code, 0))
         .then(exitCode => {

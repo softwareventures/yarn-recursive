@@ -18,30 +18,63 @@ test("readArgument", t => {
 
 test("readArguments", t => {
     t.deepEqual(readArguments([]),
-        {skipRoot: false, includeHidden: false, command: [], deprecatedCmdOpt: false});
+        {skipRoot: false, includeHidden: false, concurrent: false, command: [], deprecatedCmdOpt: false});
     t.deepEqual(readArguments(["--skip-root"]),
-        {skipRoot: true, includeHidden: false, command: [], deprecatedCmdOpt: false});
+        {skipRoot: true, includeHidden: false, concurrent: false, command: [], deprecatedCmdOpt: false});
     t.deepEqual(readArguments(["--skip-root", "--no-skip-root"]),
-        {skipRoot: false, includeHidden: false, command: [], deprecatedCmdOpt: false});
+        {skipRoot: false, includeHidden: false, concurrent: false, command: [], deprecatedCmdOpt: false});
     t.deepEqual(readArguments(["--no-skip-root", "--skipRoot"]),
-        {skipRoot: true, includeHidden: false, command: [], deprecatedCmdOpt: false});
+        {skipRoot: true, includeHidden: false, concurrent: false, command: [], deprecatedCmdOpt: false});
+    t.deepEqual(readArguments(["--concurrent"]),
+        {skipRoot: false, includeHidden: false, concurrent: true, command: [], deprecatedCmdOpt: false});
     t.deepEqual(readArguments(["install"]),
-        {skipRoot: false, includeHidden: false, command: ["install"], deprecatedCmdOpt: false});
+        {skipRoot: false, includeHidden: false, concurrent: false, command: ["install"], deprecatedCmdOpt: false});
     t.deepEqual(readArguments(["install", "--flat"]),
-        {skipRoot: false, includeHidden: false, command: ["install", "--flat"], deprecatedCmdOpt: false});
+        {
+            skipRoot: false,
+            includeHidden: false,
+            concurrent: false,
+            command: ["install", "--flat"],
+            deprecatedCmdOpt: false
+        });
     t.deepEqual(readArguments(["--", "install", "--skip-root"]),
-        {skipRoot: false, includeHidden: false, command: ["install", "--skip-root"], deprecatedCmdOpt: false});
+        {
+            skipRoot: false,
+            includeHidden: false,
+            concurrent: false,
+            command: ["install", "--skip-root"],
+            deprecatedCmdOpt: false
+        });
     t.deepEqual(readArguments(["--skip-root", "--include-hidden", "--", "install", "--flat"]),
-        {skipRoot: true, includeHidden: true, command: ["install", "--flat"], deprecatedCmdOpt: false});
+        {
+            skipRoot: true,
+            includeHidden: true,
+            concurrent: false,
+            command: ["install", "--flat"],
+            deprecatedCmdOpt: false
+        });
     t.deepEqual(readArguments(["--include-hidden", "--opt", "--flat", "--cmd", "install"]),
-        {skipRoot: false, includeHidden: true, command: ["install", "--flat"], deprecatedCmdOpt: true});
+        {
+            skipRoot: false,
+            includeHidden: true,
+            concurrent: false,
+            command: ["install", "--flat"],
+            deprecatedCmdOpt: true
+        });
     t.deepEqual(readArguments(["--opt", "--check-files --flat", "--skip-root", "--cmd", "install"]),
         {
             skipRoot: true,
             includeHidden: false,
+            concurrent: false,
             command: ["install", "--check-files", "--flat"],
             deprecatedCmdOpt: true
         });
     t.deepEqual(readArguments(["--cmd", "install --flat"]),
-        {skipRoot: false, includeHidden: false, command: ["install", "--flat"], deprecatedCmdOpt: true});
+        {
+            skipRoot: false,
+            includeHidden: false,
+            concurrent: false,
+            command: ["install", "--flat"],
+            deprecatedCmdOpt: true
+        });
 });

@@ -43,7 +43,7 @@
     "p-all": "2.1.0",
     "p-series": "2.1.0",
     "tslib": "1.9.3",
-    "yarn": "1.16.0"
+    "yarn": "1.19.0"
   },
   "config": {
     "commitizen": {

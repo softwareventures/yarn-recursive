@@ -39,7 +39,7 @@
   "dependencies": {
     "@softwareventures/array": "0.16.1",
     "@softwareventures/chain": "0.1.2",
-    "cli-color": "1.4.0",
+    "cli-color": "2.0.0",
     "p-all": "2.1.0",
     "p-series": "2.1.0",
     "tslib": "1.10.0",

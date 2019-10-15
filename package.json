@@ -28,7 +28,7 @@
     "@softwareventures/tsconfig": "2.0.0",
     "@softwareventures/tslint-rules": "0.7.1",
     "@types/cli-color": "0.3.29",
-    "@types/node": "12.7.12",
+    "@types/node": "12.11.0",
     "ava": "2.4.0",
     "cz-conventional-changelog": "3.0.2",
     "semantic-release": "15.13.24",

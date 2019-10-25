@@ -25,7 +25,7 @@
     "yarn-recursive": "yarn-recursive.js"
   },
   "devDependencies": {
-    "@softwareventures/tsconfig": "2.0.0",
+    "@softwareventures/tsconfig": "2.1.0",
     "@softwareventures/tslint-rules": "0.7.1",
     "@types/cli-color": "0.3.29",
     "@types/node": "12.11.7",

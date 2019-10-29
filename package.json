@@ -21,6 +21,9 @@
     "test": "tslint --project . && ava",
     "semantic-release": "semantic-release"
   },
+  "sideEffects": [
+    "./yarn-recursive.js"
+  ],
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
   },

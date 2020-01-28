@@ -33,7 +33,7 @@
     "@types/cli-color": "2.0.0",
     "@types/node": "12.12.21",
     "ava": "2.4.0",
-    "cz-conventional-changelog": "3.0.2",
+    "cz-conventional-changelog": "3.1.0",
     "semantic-release": "17.0.0",
     "ts-node": "8.6.2",
     "tslint": "5.20.1",

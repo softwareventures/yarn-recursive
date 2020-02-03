@@ -2,7 +2,7 @@
 /yarn.lock
 /tsconfig.json
 /tslint.json
-/.travis.yml
+/.github
 /renovate.json
 *.ts
 !*.d.ts

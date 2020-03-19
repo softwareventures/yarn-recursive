@@ -40,7 +40,7 @@
     "typescript": "3.8.3"
   },
   "dependencies": {
-    "@softwareventures/array": "0.22.0",
+    "@softwareventures/array": "0.28.0",
     "@softwareventures/chain": "0.1.2",
     "cli-color": "2.0.0",
     "p-all": "2.1.0",

@@ -39,7 +39,7 @@ interface Result {
     exitCode: number;
 }
 
-function yarn(yarnPath: string, directoryName: string, command: ReadonlyArray<string>): Promise<Result> {
+async function yarn(yarnPath: string, directoryName: string, command: ReadonlyArray<string>): Promise<Result> {
     console.log(clc.blueBright("Current yarn path: " + directoryName + path.sep + "package.json..."));
 
     return new Promise((resolve, reject) => {

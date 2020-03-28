@@ -5,7 +5,7 @@ import chain from "@softwareventures/chain";
 import {fork} from "child_process";
 import clc = require("cli-color");
 import fs = require("fs");
-import pAll from "p-all";
+import pAll = require("p-all");
 import pSeries from "p-series";
 import path = require("path");
 import {readArguments} from "./arguments";

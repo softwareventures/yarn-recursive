@@ -32,7 +32,7 @@
     "@softwareventures/tslint-rules": "0.8.1",
     "@types/cli-color": "2.0.0",
     "@types/node": "12.12.31",
-    "ava": "3.8.1",
+    "ava": "3.8.2",
     "cz-conventional-changelog": "3.2.0",
     "semantic-release": "17.0.7",
     "ts-node": "8.10.1",

@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@softwareventures/tsconfig": "2.2.0",
-    "@softwareventures/tslint-rules": "0.8.1",
+    "@softwareventures/tslint-rules": "0.9.0",
     "@types/cli-color": "2.0.0",
     "@types/node": "12.12.31",
     "ava": "3.8.2",

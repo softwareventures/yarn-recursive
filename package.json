@@ -37,7 +37,7 @@
     "semantic-release": "17.0.7",
     "ts-node": "8.10.1",
     "tslint": "6.1.2",
-    "typescript": "3.8.3"
+    "typescript": "3.9.2"
   },
   "dependencies": {
     "@softwareventures/array": "0.31.0",

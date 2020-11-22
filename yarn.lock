@@ -275,10 +275,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.15.0.tgz#96915baa05e6a6a1d137badf4984d3fc05820bb6"
   integrity sha512-lu8BpxjAtRCAo5ifytTpCPCj99LF7o/2Myn+NXyNCBqvPYn7Pjd76AMmUB5l7XF1U6t0hcWrlEM5ESufW7wAeA==
 
-"@softwareventures/array@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-3.2.0.tgz#effa2b4713a42361e5bdf29878d3525594a99c2c"
-  integrity sha512-uqsH2WyUQMjHLZSAVAqafEegAMwZ4x9+3O8arSYghCP061FATkIgxLGTvClqi8sfYmGckbFuEi+/sSTmJA0PBA==
+"@softwareventures/array@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-3.4.0.tgz#5af71c4a8ee49980c48b28536a7189c4eca81452"
+  integrity sha512-2VyFEIgzfv9aqfcqPQAUvq616ldS0cspeJriuPkTPBI/boUBCaXEVM4LSWIof++fBTkW2qEEeJOSeOAbdRZEwA==
   dependencies:
     "@softwareventures/dictionary" "^0.6.0 || ^0.7.0"
     "@softwareventures/ordered" "^0.2.0"

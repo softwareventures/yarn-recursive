@@ -30,7 +30,7 @@
   "devDependencies": {
     "@softwareventures/semantic-release-config": "1.1.1",
     "@softwareventures/tsconfig": "5.0.1",
-    "@softwareventures/tslint-rules": "0.9.1",
+    "@softwareventures/tslint-rules": "0.9.2",
     "@types/cli-color": "2.0.0",
     "@types/node": "10.17.56",
     "ava": "3.15.0",

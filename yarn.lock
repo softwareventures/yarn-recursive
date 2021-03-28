@@ -332,10 +332,10 @@
   resolved "https://registry.yarnpkg.com/@softwareventures/tsconfig/-/tsconfig-5.0.1.tgz#9be2d6dcdc3de65233014c527754700f46882bbb"
   integrity sha512-B1LBY+S7dDiPmH29MTi3Z3hBdSEetHf87cmUueQCSlrbpFpROZvDZrnujM844wXKNue5XYIe5oO8jp/eWCfY9w==
 
-"@softwareventures/tslint-rules@0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/tslint-rules/-/tslint-rules-0.9.1.tgz#2b585cd73391c7e955dac3f659e6d1f4f3d18e77"
-  integrity sha512-suCWbYk2DvTOEyAIQ3iJJ4MZswdgtr5T5WvWyibyRWo+z7uKDMawTQCM3LVF0tfG+WIEflw9sJPwAleUcFH2Dw==
+"@softwareventures/tslint-rules@0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@softwareventures/tslint-rules/-/tslint-rules-0.9.2.tgz#5e4732625adf004cb6772c8854babeb9c7f1bdd9"
+  integrity sha512-81XpsEB8ZsYpz2lc0Dvo7308DkoyQgc3Pi6aJ76eJw9khbd/QireJSt/Q6bCVQZpINpYEkdkgOWYw2GChBJaFw==
   dependencies:
     tslib "^1.9.3 || ^2.0.0"
     tslint-eslint-rules "^5.4.0"

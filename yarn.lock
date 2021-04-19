@@ -408,13 +408,13 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.15.0.tgz#96915baa05e6a6a1d137badf4984d3fc05820bb6"
   integrity sha512-lu8BpxjAtRCAo5ifytTpCPCj99LF7o/2Myn+NXyNCBqvPYn7Pjd76AMmUB5l7XF1U6t0hcWrlEM5ESufW7wAeA==
 
-"@softwareventures/array@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-3.9.0.tgz#5ed1bdd816a5ee5a6d0746f380c5cd3806b01e08"
-  integrity sha512-XaaaIUx/oRp4qgqCJRc34f13n1PfQ9sjIlCVdJtg3LCx3Sdzkblzsw/pPe80xwST29RTlEqhPlRPmiKU7mANaA==
+"@softwareventures/array@3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-3.10.0.tgz#d02de7bbe8486c5bfc0203ca412723ef55c1a97d"
+  integrity sha512-xMVf8RLF97w95jzyioXlLJVyZiBISih2yKULP1mV1n2pSE8QyhOfLhgcbjVrRYKZNm0vXT8wusPcrF8rcDuieA==
   dependencies:
     "@softwareventures/dictionary" "^0.6.0 || ^0.7.0 || ^0.8.0"
-    "@softwareventures/nullable" "^1.0.0"
+    "@softwareventures/nullable" "^1.0.0 || ^1.2.1"
     "@softwareventures/ordered" "^0.2.0"
     dictionary-types "^1.2.0"
     tslib "^1.9.3 || ^2.0.0"
@@ -432,12 +432,12 @@
     dictionary-types "^1.2.0"
     tslib "2.1.0"
 
-"@softwareventures/nullable@^1.0.0":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/nullable/-/nullable-1.2.1.tgz#b0fb43f344595d77fc141154737b94ad7561c26b"
-  integrity sha512-qngwMZ7IBpjaJuoFC5b5OqJRhiZg/ilZ+qqggy+rXWs0MHXfs43DmNCJUD8EWMmYiaD5fj7tpR6zP7aQzCYOaQ==
+"@softwareventures/nullable@^1.0.0 || ^1.2.1":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@softwareventures/nullable/-/nullable-1.2.2.tgz#231410cfd39c6d31cc86501ddef2d9d3db8d1c18"
+  integrity sha512-aq6wwLWlosUtXh81ngnr+rbc9xTj7hZwa3tBygBz1Drz6cNCZgyTN4g7TXVa7AT+mLL3KZBtBPJAW0z21bHPgA==
   dependencies:
-    tslib "2.1.0"
+    tslib "2.2.0"
 
 "@softwareventures/ordered@^0.2.0":
   version "0.2.2"

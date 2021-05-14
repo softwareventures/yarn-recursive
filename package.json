@@ -27,6 +27,9 @@
   "bin": {
     "yarn-recursive": "yarn-recursive.js"
   },
+  "engines": {
+    "node": ">= 12"
+  },
   "devDependencies": {
     "@softwareventures/semantic-release-config": "1.1.1",
     "@softwareventures/tsconfig": "5.1.0",

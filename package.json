@@ -47,7 +47,7 @@
     "@softwareventures/array": "3.10.0",
     "@softwareventures/chain": "0.1.2",
     "cli-color": "2.0.0",
-    "p-all": "3.0.0",
+    "p-all": "4.0.0",
     "p-series": "2.1.0",
     "tslib": "2.2.0",
     "yarn": "1.22.10"

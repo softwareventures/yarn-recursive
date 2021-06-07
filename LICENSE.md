@@ -2,7 +2,7 @@ MIT License
 
 Copyright (c) 2017 Nicolas Rigaudiere
 
-Copyright 2019-2020 Software Ventures Limited
+Copyright 2019-2021 Software Ventures Limited
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

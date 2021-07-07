@@ -3,9 +3,9 @@
   "version": "0.0.0-development",
   "description": "Recursively run yarn in a folder. Fork of original with bug fixes, and performance and sanity patches.",
   "keywords": [
-    "yarn",
+    "build",
     "recursive",
-    "build"
+    "yarn"
   ],
   "author": "Nicolas Rigaudière",
   "contributors": [
@@ -13,22 +13,31 @@
   ],
   "homepage": "https://github.com/softwareventures/yarn-recursive",
   "bugs": "https://github.com/softwareventures/yarn-recursive/issues",
-  "main": "yarn-recursive.js",
   "repository": "github:softwareventures/yarn-recursive",
   "license": "MIT",
   "scripts": {
     "prepare": "tsc",
-    "test": "tslint --project . && ava",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test": "tslint --project . && ava"
+  },
+  "main": "yarn-recursive.js",
+  "bin": {
+    "yarn-recursive": "yarn-recursive.js"
   },
   "sideEffects": [
     "./yarn-recursive.js"
   ],
-  "bin": {
-    "yarn-recursive": "yarn-recursive.js"
-  },
   "engines": {
     "node": ">= 12"
+  },
+  "dependencies": {
+    "@softwareventures/array": "3.10.0",
+    "@softwareventures/chain": "0.1.2",
+    "cli-color": "2.0.0",
+    "p-all": "4.0.0",
+    "p-series": "2.1.0",
+    "tslib": "2.3.0",
+    "yarn": "1.22.10"
   },
   "devDependencies": {
     "@softwareventures/semantic-release-config": "1.1.1",
@@ -42,15 +51,6 @@
     "ts-node": "9.1.1",
     "tslint": "6.1.3",
     "typescript": "4.3.5"
-  },
-  "dependencies": {
-    "@softwareventures/array": "3.10.0",
-    "@softwareventures/chain": "0.1.2",
-    "cli-color": "2.0.0",
-    "p-all": "4.0.0",
-    "p-series": "2.1.0",
-    "tslib": "2.3.0",
-    "yarn": "1.22.10"
   },
   "config": {
     "commitizen": {

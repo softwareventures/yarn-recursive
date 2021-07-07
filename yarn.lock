@@ -414,43 +414,33 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.15.0.tgz#96915baa05e6a6a1d137badf4984d3fc05820bb6"
   integrity sha512-lu8BpxjAtRCAo5ifytTpCPCj99LF7o/2Myn+NXyNCBqvPYn7Pjd76AMmUB5l7XF1U6t0hcWrlEM5ESufW7wAeA==
 
-"@softwareventures/array@3.10.0":
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-3.10.0.tgz#d02de7bbe8486c5bfc0203ca412723ef55c1a97d"
-  integrity sha512-xMVf8RLF97w95jzyioXlLJVyZiBISih2yKULP1mV1n2pSE8QyhOfLhgcbjVrRYKZNm0vXT8wusPcrF8rcDuieA==
+"@softwareventures/array@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-4.1.2.tgz#64837b0f2b9471e831ddd3545dc7a132ab5fbc1b"
+  integrity sha512-pJbMwIXY4Cod9DGYkcSlTnsSHMOWVT9Uu4+FvlPb4gFe3Qco+hekal4IR58KRwg1EqSHejvAIdP/bTSDnOvl0w==
   dependencies:
-    "@softwareventures/dictionary" "^0.6.0 || ^0.7.0 || ^0.8.0"
-    "@softwareventures/nullable" "^1.0.0 || ^1.2.1"
-    "@softwareventures/ordered" "^0.2.0"
-    dictionary-types "^1.2.0"
-    tslib "^1.9.3 || ^2.0.0"
+    "@softwareventures/nullable" "^1.0.0 || ^1.0.0 || ^1.2.1"
+    "@softwareventures/ordered" "^0.2.0 || ^1.0.0"
+    tslib "^2.0.0"
 
 "@softwareventures/chain@0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@softwareventures/chain/-/chain-0.1.2.tgz#2cba555b5c916643c4956ba55b5c538041f20c27"
   integrity sha512-4eMBnTKQBLHQi7fbKtqf/i8LH5fsGb4JDTXDWo4o7TnUq+3TSdC2gqSopVxb7zQD/jgQTzyGSVDUcIFtlbjMeQ==
 
-"@softwareventures/dictionary@^0.6.0 || ^0.7.0 || ^0.8.0":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/dictionary/-/dictionary-0.8.1.tgz#6a0fdd39c8181471337561c6724272de72872ad7"
-  integrity sha512-rlGBreUXqD/2ybJZHLUQs08J1C3mQXpvVmpTejmsmy/istVJ1YsOMK52ahirMr2/a7S3NUoF2BQImWQ3AYIhlQ==
-  dependencies:
-    dictionary-types "^1.2.0"
-    tslib "2.1.0"
-
-"@softwareventures/nullable@^1.0.0 || ^1.2.1":
+"@softwareventures/nullable@^1.0.0 || ^1.0.0 || ^1.2.1":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@softwareventures/nullable/-/nullable-1.4.0.tgz#00d51ae9082ce3f338e394e8263a72a12ae3acfa"
   integrity sha512-hds7X6hRqgUQz9L850FCaRFxW/whMc4eOCbJtekeZIiAoczhaw2xQrq5sT+8KZV5MkX8ZddtfMkARwYxFmYwDA==
   dependencies:
     tslib "2.2.0"
 
-"@softwareventures/ordered@^0.2.0":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@softwareventures/ordered/-/ordered-0.2.2.tgz#e8b55c57a7219a90e0cc6a27a793c4598e5ae9aa"
-  integrity sha512-n3Kkk9jZ+i2Az7YqnJR3TimhsVSiTfwN9ybDfPcJvvCge0cINszO754n4/pdlCyLYVOn2VzTVFDVTrj+xFvNFQ==
+"@softwareventures/ordered@^0.2.0 || ^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/ordered/-/ordered-1.0.0.tgz#d803eef43bb0b4ccfcd78d2928fe38b5109ad99e"
+  integrity sha512-SUFUYDWEPAS54LpGH+mRHwkGuTINPDt4OOS3h/Zr9f12JPFz2cqh6Xxwg75BZqwaeONuUwmklJVMRmgvxSSkPA==
   dependencies:
-    tslib "^1.9.3 || ^2.0.0"
+    tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
 
 "@softwareventures/semantic-release-config@1.2.0":
   version "1.2.0"
@@ -1604,11 +1594,6 @@ dezalgo@^1.0.0:
   dependencies:
     asap "^2.0.0"
     wrappy "1"
-
-dictionary-types@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/dictionary-types/-/dictionary-types-1.2.0.tgz#187d89b63b044a65a5e4aed0f2345271f086200d"
-  integrity sha512-zeP98fC8l+xwHMCw+q9spJCnDrm4ou3Vyk9yNihjJeJD9Mi+zuFxtyO6kAmX5b5d49mavZ6VYvVFF3Ap6hCzBw==
 
 diff@^4.0.1:
   version "4.0.2"
@@ -4909,17 +4894,12 @@ tslib@1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
   integrity sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
 
-tslib@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
-  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
-
 tslib@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-tslib@2.3.0, "tslib@^1.9.3 || ^2.0.0":
+tslib@2.3.0, "tslib@^1.9.3 || ^2.0.0", "tslib@^1.9.3 || ^2.0.0 || ^2.1.0", tslib@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==

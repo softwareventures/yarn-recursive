@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@softwareventures/array": "4.1.2",
-    "@softwareventures/chain": "0.1.2",
+    "@softwareventures/chain": "0.1.3",
     "cli-color": "2.0.0",
     "p-all": "4.0.0",
     "p-series": "2.1.0",

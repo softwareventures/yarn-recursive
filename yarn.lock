@@ -454,12 +454,12 @@
   resolved "https://registry.yarnpkg.com/@softwareventures/tsconfig/-/tsconfig-5.1.0.tgz#bee139d5e6fccf5237fa7dbcdbf8ac7d12ac33d0"
   integrity sha512-D85kPab/iU9SKQRPi76eBnLa060kJEvI+M6PLzdfuq1nS+G7020NORHf5Lr6boLzxVe/PXNywTSUzbkslDkSrg==
 
-"@softwareventures/tslint-rules@0.9.2":
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/@softwareventures/tslint-rules/-/tslint-rules-0.9.2.tgz#5e4732625adf004cb6772c8854babeb9c7f1bdd9"
-  integrity sha512-81XpsEB8ZsYpz2lc0Dvo7308DkoyQgc3Pi6aJ76eJw9khbd/QireJSt/Q6bCVQZpINpYEkdkgOWYw2GChBJaFw==
+"@softwareventures/tslint-rules@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/tslint-rules/-/tslint-rules-1.0.0.tgz#976b3f307ab194ee6b5faad79684ce8b0a8ede96"
+  integrity sha512-Mqg/SyTIUtOnmVsGO5UfM2BNhzJCOIvIK3TPdYiP859cOgy+iXA8HVckscBuFiEkX088VXAUzH1x88XaShN//A==
   dependencies:
-    tslib "^1.9.3 || ^2.0.0"
+    tslib "^1.9.3 || ^2.0.0 || ^2.1.0"
     tslint-eslint-rules "^5.4.0"
 
 "@szmarczak/http-timer@^1.1.2":
@@ -4899,7 +4899,7 @@ tslib@2.2.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-tslib@2.3.0, "tslib@^1.9.3 || ^2.0.0", "tslib@^1.9.3 || ^2.0.0 || ^2.1.0", tslib@^2.0.0:
+tslib@2.3.0, "tslib@^1.9.3 || ^2.0.0 || ^2.1.0", tslib@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==

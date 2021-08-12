@@ -36,7 +36,7 @@
     "cli-color": "2.0.0",
     "p-all": "4.0.0",
     "p-series": "2.1.0",
-    "tslib": "2.3.0",
+    "tslib": "2.3.1",
     "yarn": "1.22.11"
   },
   "devDependencies": {

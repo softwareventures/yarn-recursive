@@ -37,7 +37,7 @@
     "p-all": "4.0.0",
     "p-series": "3.0.0",
     "tslib": "2.3.1",
-    "yarn": "1.22.11"
+    "yarn": "1.22.17"
   },
   "devDependencies": {
     "@softwareventures/semantic-release-config": "2.0.0",

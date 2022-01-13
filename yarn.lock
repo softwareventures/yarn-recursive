@@ -464,10 +464,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@softwareventures/array@4.1.3":
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-4.1.3.tgz#fbcf5fb649c5ae8611e64c398bcb57203531a7d1"
-  integrity sha512-/ThQEaiQb8PuipPfH6DdwRp4Xq6nsOzkUDWRtOQ+EstA8KXgSa9bzQNSYKkIBGQ4qjvfQKHOqVrh75CdZ3iE8Q==
+"@softwareventures/array@4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-4.1.4.tgz#765e3726db6526d7c964b1303092395db6f6319d"
+  integrity sha512-CA7UhzA1NlszzaCB/FKvwnG5A8GUJVpxO1Wr9H5JAUG/vU3yM0F88RPw7dVrWqIYfiv54gDbW3V4/9XN5x8rhg==
   dependencies:
     "@softwareventures/nullable" "^1.0.0 || ^1.0.0 || ^1.2.1 || ^2.0.0"
     "@softwareventures/ordered" "^0.2.0 || ^1.0.0"

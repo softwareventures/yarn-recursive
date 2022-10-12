@@ -30,6 +30,7 @@ jobs:
           node-version: ${{matrix.node-version}}
       - run: yarn
       - run: yarn test
+      - run: yarn lint
   deploy:
     name: Deploy
     runs-on: ubuntu-latest

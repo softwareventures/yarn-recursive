@@ -16,6 +16,7 @@
   "repository": "github:softwareventures/yarn-recursive",
   "license": "MIT",
   "scripts": {
+    "fix": "tsc --noEmit && tslint --fix --project .",
     "lint": "tsc --noEmit && tslint --project .",
     "prepare": "tsc",
     "semantic-release": "semantic-release",

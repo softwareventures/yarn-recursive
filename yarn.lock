@@ -477,10 +477,10 @@
     "@softwareventures/ordered" "^1.1.0"
     tslib "^2.0.0"
 
-"@softwareventures/chain@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/chain/-/chain-1.0.1.tgz#79099066f5274e1cccf447a935f0b50372c1a673"
-  integrity sha512-1nJZ88aGuadOVQtUDf5ja1PNeSXWtstkfJ9uqwPi5Xepm4n2zss6toiTC4DLsY8bKROTrdnxlTgG+8M4nCnigg==
+"@softwareventures/chain@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/chain/-/chain-2.0.0.tgz#531fb9933c5820ad2168bf91c935f81ff1ef8377"
+  integrity sha512-pnWS8TZndRGFDJz9Oempa6FfNIC8NiiVPLMSO7tSzFPX9lI+DdesEt/L0MXtXlxyg9kxYq5qkslM5jsgpAaO1A==
 
 "@softwareventures/nullable@^1.0.0 || ^2.0.0":
   version "2.0.0"

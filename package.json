@@ -47,7 +47,7 @@
     "@softwareventures/tslint-rules": "1.0.0",
     "@types/cli-color": "2.0.2",
     "@types/node": "10.17.60",
-    "ava": "4.2.0",
+    "ava": "4.3.3",
     "cz-conventional-changelog": "3.3.0",
     "semantic-release": "17.4.7",
     "ts-node": "10.9.1",

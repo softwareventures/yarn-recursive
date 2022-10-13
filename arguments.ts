@@ -1,3 +1,5 @@
+import {notNull} from "@softwareventures/nullable";
+
 export interface Options {
     readonly skipRoot: boolean;
     readonly includeHidden: boolean;
@@ -74,7 +76,7 @@ export function readArgument(arg: string): Argument {
     const matches = /^--([^=]*)(?:=(.*))?$/.exec(arg);
 
     if (matches) {
-        let name = matches[1].replace(/[A-Z]/g, s => "-" + s.toLowerCase());
+        let name = notNull(matches[1]).replace(/[A-Z]/g, s => "-" + s.toLowerCase());
         let value = matches[2] == null
             ? true
             : matches[2];

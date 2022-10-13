@@ -35,6 +35,7 @@
   "dependencies": {
     "@softwareventures/array": "5.3.0",
     "@softwareventures/chain": "2.0.0",
+    "@softwareventures/nullable": "3.0.0",
     "cli-color": "2.0.3",
     "p-all": "4.0.0",
     "p-series": "3.0.0",
@@ -43,7 +44,7 @@
   },
   "devDependencies": {
     "@softwareventures/semantic-release-config": "3.0.0",
-    "@softwareventures/tsconfig": "5.1.1",
+    "@softwareventures/tsconfig": "7.0.0",
     "@softwareventures/tslint-rules": "1.0.0",
     "@types/cli-color": "2.0.2",
     "@types/node": "10.17.60",

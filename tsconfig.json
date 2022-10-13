@@ -1,5 +1,5 @@
 {
-  "extends": "@softwareventures/tsconfig",
+  "extends": "@softwareventures/tsconfig/commonjs",
   "compilerOptions": {
     "lib": [
       "es5",

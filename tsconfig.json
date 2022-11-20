@@ -4,7 +4,8 @@
     "lib": [
       "es5",
       "es2015.promise"
-    ]
+    ],
+    "types": ["node"]
   },
   "exclude": [
     "**/*.test.ts",

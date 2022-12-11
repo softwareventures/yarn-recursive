@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@softwareventures/array": "6.0.3",
-    "@softwareventures/chain": "2.0.2",
+    "@softwareventures/chain": "3.0.0",
     "@softwareventures/nullable": "3.1.0",
     "cli-color": "2.0.3",
     "p-all": "4.0.0",

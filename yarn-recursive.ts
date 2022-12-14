@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import {filterFn, foldFn, mapFn} from "@softwareventures/array";
-import chain from "@softwareventures/chain";
+import {chain} from "@softwareventures/chain";
 import {fork} from "child_process";
 import clc = require("cli-color");
 import fs = require("fs");

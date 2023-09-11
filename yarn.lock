@@ -11,9 +11,9 @@
     chalk "^2.4.2"
 
 "@babel/helper-validator-identifier@^7.22.5":
-  version "7.22.5"
-  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.5.tgz#9544ef6a33999343c8740fa51350f30eeaaaf193"
-  integrity sha512-aJXu+6lErq8ltp+JhkJUfk1MTGyuA4v7f3pA+BJ5HLfNC6nAQ0Cpi9uOquUj8Hehg0aUiHzWQbOVJGao6ztBAQ==
+  version "7.22.15"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.15.tgz#601fa28e4cc06786c18912dca138cec73b882044"
+  integrity sha512-4E/F9IIEi8WR94324mbDUMo074YTheJmd7eZF5vITTeYchqAi6sYXRLHUVsmkdmY4QjfKTcB2jB7dVP3NaBElQ==
 
 "@babel/highlight@^7.22.13":
   version "7.22.13"
@@ -1438,9 +1438,9 @@ cosmiconfig@^7.0.0:
     yaml "^1.10.0"
 
 cosmiconfig@^8.0.0:
-  version "8.3.3"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.3.3.tgz#45985f9f39f3c9330288ef642b1dcb7342bd76d7"
-  integrity sha512-/VY+0IvFoE47hwgKHu8feeBFIb1Z1mcJFiLrNwaJpLoLa9qwLVquMGMr2OUwQmhpJDtsSQSasg/TMv1imec9xA==
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.3.5.tgz#3b3897ddd042d022d5a207d4c8832e54f5301977"
+  integrity sha512-A5Xry3xfS96wy2qbiLkQLAg4JUrR2wvfybxj6yqLmrUfMAvhS3MZxIP2oQn0grgYIvJqzpeTEWu4vK0t+12NNw==
   dependencies:
     import-fresh "^3.3.0"
     js-yaml "^4.1.0"
@@ -2232,9 +2232,9 @@ https-proxy-agent@^5.0.0:
     debug "4"
 
 https-proxy-agent@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-7.0.1.tgz#0277e28f13a07d45c663633841e20a40aaafe0ab"
-  integrity sha512-Eun8zV0kcYS1g19r78osiQLEFIRspRUDd9tIfBCTBPBeMieF/EsJNL8VI3xOIdYRDEkjQnqOYPsZ2DsWsVsFwQ==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-7.0.2.tgz#e2645b846b90e96c6e6f347fb5b2e41f1590b09b"
+  integrity sha512-NmLNjm6ucYwtcUmL7JQC1ZQ57LmHP4lT15FQ8D61nak1rO6DH+fz5qNK2Ap5UN4ZapYICE3/0KodcLYSPsPbaA==
   dependencies:
     agent-base "^7.0.2"
     debug "4"
@@ -2562,9 +2562,9 @@ issue-parser@^6.0.0:
     lodash.uniqby "^4.7.0"
 
 jackspeak@^2.0.3:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-2.3.1.tgz#ce2effa4c458e053640e61938865a5b5fae98456"
-  integrity sha512-4iSY3Bh1Htv+kLhiiZunUhQ+OYXIn0ze3ulq8JeWrFKmhPAJSySV2+kdtRh2pGcCeF0s6oR8Oc+pYZynJj4t8A==
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-2.3.3.tgz#95e4cbcc03b3eb357bf6bcce14a903fb3d1151e1"
+  integrity sha512-R2bUw+kVZFS/h1AZqBKrSgDmdmjApzgY0AlCPumopFiAlbUxE2gf+SCuBzQ0cP5hHmUmFYF5yw55T97Th5Kstg==
   dependencies:
     "@isaacs/cliui" "^8.0.2"
   optionalDependencies:
@@ -4512,9 +4512,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 tar@^6.1.0, tar@^6.1.11, tar@^6.1.2:
-  version "6.1.15"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.15.tgz#c9738b0b98845a3b344d334b8fa3041aaba53a69"
-  integrity sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-6.2.0.tgz#b14ce49a79cb1cd23bc9b016302dea5474493f73"
+  integrity sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==
   dependencies:
     chownr "^2.0.0"
     fs-minipass "^2.0.0"

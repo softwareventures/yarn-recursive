@@ -576,10 +576,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
-"@types/cli-color@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@types/cli-color/-/cli-color-2.0.5.tgz#ef561afe744f28a28d972f05339a27a24db1b4d7"
-  integrity sha512-7GTI5GNi37HHQ3BEbT64tstsEeNmw8yix3vwVlFEB0EFO8U5vIcPzKbnAjoLnlIfQ7afq5Ol5eM4RCqEJdcK4g==
+"@types/cli-color@2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@types/cli-color/-/cli-color-2.0.6.tgz#becc4b0c8509bbc938e7c3b2b7a0a8dd64691d08"
+  integrity sha512-uLK0/0dOYdkX8hNsezpYh1gc8eerbhf9bOKZ3e24sP67703mw9S14/yW6mSTatiaKO9v+mU/a1EVy4rOXXeZTA==
 
 "@types/minimist@^1.2.0":
   version "1.2.5"

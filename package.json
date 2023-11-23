@@ -43,7 +43,7 @@
     "yarn": "1.22.21"
   },
   "devDependencies": {
-    "@softwareventures/semantic-release-config": "3.1.0",
+    "@softwareventures/semantic-release-config": "4.0.0",
     "@softwareventures/tsconfig": "7.1.0",
     "@softwareventures/tslint-rules": "2.0.0",
     "@types/cli-color": "2.0.6",

@@ -33,7 +33,7 @@
     "node": "^14 || ^16 || >=18"
   },
   "dependencies": {
-    "@softwareventures/array": "6.0.3",
+    "@softwareventures/array": "6.1.0",
     "@softwareventures/chain": "3.0.0",
     "@softwareventures/nullable": "3.1.0",
     "cli-color": "2.0.3",

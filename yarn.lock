@@ -502,10 +502,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@softwareventures/array@6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-6.0.3.tgz#018a4ec7a1c5e559bc9c5b4a13583a13496acf3a"
-  integrity sha512-RPPC4ZClS7HauBgnFVJgVC+WSehCa33sSDE+SE5nDmaMGBvQO+4l99l0+cCXNY89qkzs57Z1iX44m5/rxmyBJg==
+"@softwareventures/array@6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-6.1.0.tgz#377c9b99a71228dbd58301cc21f69939cfa9ab4e"
+  integrity sha512-ZvN+BAIELx0kVi6U+KAMr89TP8pohl4scPRCslIArkFxwumeR2ZuEgHJLxoIyWyUIkcXH4fYR1LmhUf9Fv9/IQ==
   dependencies:
     "@softwareventures/nullable" "^1.0.0 || ^2.0.0 || ^3.0.0"
     "@softwareventures/ordered" "^1.1.0 || ^2.0.0"

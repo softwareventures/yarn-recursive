@@ -537,10 +537,10 @@
   dependencies:
     tslib "2.6.2"
 
-"@softwareventures/tsconfig@7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@softwareventures/tsconfig/-/tsconfig-7.1.1.tgz#10d520eab5f297f0c53c091372c12fb3a766b648"
-  integrity sha512-3IyogItde19NtQmI5F1zm1GUrf783u5/AsDoSPKpSCi7TXPnZgSdQY4+4hjrmRVhoH4mFPHM/OSdM5uqssnA/Q==
+"@softwareventures/tsconfig@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@softwareventures/tsconfig/-/tsconfig-8.0.0.tgz#7f066318ebde1eb244cc4bfbba0a2243ae96112c"
+  integrity sha512-7REvURy6dsa1WDXrHcGvhdY0ty6/fp+rO3VW7RjyMx5tdWfMdAAfZVl9j6rwB2Q5yl/XRuj8J3rHTg94125yrQ==
 
 "@softwareventures/tslint-rules@2.0.0":
   version "2.0.0"

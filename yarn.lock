@@ -493,10 +493,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@softwareventures/array@6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-6.1.0.tgz#377c9b99a71228dbd58301cc21f69939cfa9ab4e"
-  integrity sha512-ZvN+BAIELx0kVi6U+KAMr89TP8pohl4scPRCslIArkFxwumeR2ZuEgHJLxoIyWyUIkcXH4fYR1LmhUf9Fv9/IQ==
+"@softwareventures/array@7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@softwareventures/array/-/array-7.0.1.tgz#c70d63c3a7ca53b41a8812977bc785a844227c41"
+  integrity sha512-9quO63WbI1y79q5qWAlBcOSgIK1X01gJGx3kLg83FkL0qfFR5AR7lDkvuphjooo4fxIZmnbzl0GvdI/PHHPIkg==
   dependencies:
     "@softwareventures/nullable" "^1.0.0 || ^2.0.0 || ^3.0.0"
     "@softwareventures/ordered" "^1.1.0 || ^2.0.0"

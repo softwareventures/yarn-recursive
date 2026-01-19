@@ -36,7 +36,7 @@
     "@softwareventures/array": "6.1.0",
     "@softwareventures/chain": "3.0.0",
     "@softwareventures/nullable": "3.2.0",
-    "cli-color": "2.0.3",
+    "cli-color": "2.0.4",
     "p-all": "4.0.0",
     "p-series": "3.0.0",
     "tslib": "2.8.1",

@@ -3,15 +3,15 @@
 
 
 "@babel/code-frame@^7.0.0":
-  version "7.27.1"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.27.1.tgz#200f715e66d52a23b221a9435534a91cc13ad5be"
-  integrity sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.28.6.tgz#72499312ec58b1e2245ba4a4f550c132be4982f7"
+  integrity sha512-JYgintcMjRiCvS8mMECzaEn+m3PfoQiyqukOMCCVQtoJGYJw8j/8LBJEiqkHLkfwCcs74E3pbAUFNg7d9VNJ+Q==
   dependencies:
-    "@babel/helper-validator-identifier" "^7.27.1"
+    "@babel/helper-validator-identifier" "^7.28.5"
     js-tokens "^4.0.0"
     picocolors "^1.1.1"
 
-"@babel/helper-validator-identifier@^7.27.1":
+"@babel/helper-validator-identifier@^7.28.5":
   version "7.28.5"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.28.5.tgz#010b6938fab7cb7df74aa2bbc06aa503b8fe5fb4"
   integrity sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==
@@ -408,10 +408,10 @@
   dependencies:
     graceful-fs "4.2.10"
 
-"@pnpm/npm-conf@^2.1.0":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@pnpm/npm-conf/-/npm-conf-2.3.1.tgz#bb375a571a0bd63ab0a23bece33033c683e9b6b0"
-  integrity sha512-c83qWb22rNRuB0UaVCI0uRPNRr8Z0FWnEIvT47jiHAmOIUHbBOg5XvV7pM5x+rKn9HRpjxquDbXYSXr3fAKFcw==
+"@pnpm/npm-conf@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@pnpm/npm-conf/-/npm-conf-3.0.2.tgz#857622421aa9bbf254e557b8a022c216a7928f47"
+  integrity sha512-h104Kh26rR8tm+a3Qkc5S4VLYint3FE48as7+/5oCEcKR2idC/pF1G6AhIXKI+eHPJa/3J9i5z0Al47IeGHPkA==
   dependencies:
     "@pnpm/config.env-replace" "^1.1.0"
     "@pnpm/network.ca-file" "^1.0.1"
@@ -584,9 +584,9 @@
   integrity sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==
 
 "@types/node@*":
-  version "25.0.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.0.6.tgz#5ca3c46f2b256b59128f433426e42d464765dab1"
-  integrity sha512-NNu0sjyNxpoiW3YuVFfNz7mxSQ+S4X2G28uqg2s+CzoqoQjLPsWSbsFFyztIAqt2vb8kfEAsJNepMGPTxFDx3Q==
+  version "25.0.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.0.9.tgz#81ce3579ddf67cae812a9d49c8a0ab90c82e7782"
+  integrity sha512-/rpCXHlCWeqClNBwUhDcusJxXYDjZTyE8v5oTO7WbL8eij2nKhUeU89/6xgjU7N4/Vh3He0BtyhJdQbDyhiXAw==
   dependencies:
     undici-types "~7.16.0"
 
@@ -3923,11 +3923,11 @@ redeyed@~2.1.0:
     esprima "~4.0.0"
 
 registry-auth-token@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-5.1.0.tgz#3c659047ecd4caebd25bc1570a3aa979ae490eca"
-  integrity sha512-GdekYuwLXLxMuFTwAPg5UKGLW/UXzQrZvH/Zj791BQif5T05T0RsaLfHc9q3ZOKi7n+BoprPD9mJ0O0k4xzUlw==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-5.1.1.tgz#f1ff69c8e492e7edee07110b4752dd0a8aa82853"
+  integrity sha512-P7B4+jq8DeD2nMsAcdfaqHbssgHtZ7Z5+++a5ask90fvmJ8p5je4mOa+wzu+DB4vQ5tdJV/xywY+UnVFeQLV5Q==
   dependencies:
-    "@pnpm/npm-conf" "^2.1.0"
+    "@pnpm/npm-conf" "^3.0.2"
 
 require-directory@^2.1.1:
   version "2.1.1"
